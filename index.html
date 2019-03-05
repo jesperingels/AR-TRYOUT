@@ -8,9 +8,11 @@
 <a-scene embedded arjs='sourceType: webcam;'>
     <a-assets>
         <video id="train" src="public/video/yellow-train.mp4" autoplay loop="true" src="penguin-sledding.mp4"></video>
+        <img id="tower" src="public/img/watchtower.jpg">
     </a-assets>
     <a-plane position='0 0 0' rotation="90 0 180">
-        <a-video src="#train"></a-video>
+        <!--<a-video src="#train"></a-video>-->
+        <a-image src="#tower"></a-image>
     </a-plane>
     <a-marker-camera preset='hiro'></a-marker-camera>
 </a-scene>
